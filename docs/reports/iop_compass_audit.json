@@ -1,0 +1,88 @@
+{
+  "png": 5000,
+  "json": 5000,
+  "unreadable_png": 0,
+  "bad_json": 0,
+  "patients": 1000,
+  "views_per_patient": {
+    "5": 1000
+  },
+  "patients_with_all_5": 1000,
+  "long_side_px": {
+    "min": 333,
+    "p5": 1825,
+    "median": 4043,
+    "p95": 5685,
+    "max": 6308
+  },
+  "under_1280_images": 149,
+  "md5_dup_groups": 0,
+  "dhash_near_groups": 0,
+  "unique_groups": 5000,
+  "class_names": {
+    "tooth": 88601
+  },
+  "arch": {
+    "upper": 43473,
+    "lower": 45128
+  },
+  "teeth_per_img": {
+    "min": 5,
+    "median": 16.0,
+    "max": 32
+  },
+  "fdi_unique": 32,
+  "molar_annotations": 22670,
+  "fdi_by_view_sample": {
+    "Center": {
+      "11": 998,
+      "24": 981,
+      "21": 970,
+      "41": 969,
+      "31": 969,
+      "36": 968
+    },
+    "Down": {
+      "31": 993,
+      "43": 991,
+      "41": 991,
+      "32": 990,
+      "33": 990,
+      "42": 989
+    },
+    "Left": {
+      "21": 994,
+      "26": 977,
+      "33": 976,
+      "11": 972,
+      "25": 965,
+      "32": 964
+    },
+    "Right": {
+      "11": 994,
+      "16": 977,
+      "12": 972,
+      "43": 970,
+      "42": 966,
+      "21": 965
+    },
+    "Upper": {
+      "11": 996,
+      "21": 994,
+      "26": 981,
+      "13": 975,
+      "23": 974,
+      "22": 973
+    }
+  },
+  "bad_contours": 73,
+  "s1_spot_check": {
+    "n_images": 30,
+    "images_with_cls0": 5,
+    "conf_p50_p90": [
+      0.068,
+      0.451
+    ]
+  },
+  "thumbnails": "outputs/iop_thumbnails"
+}

@@ -1,0 +1,10 @@
+{
+  "images_processed": 1082,
+  "candidates_total": 25,
+  "buckets": {
+    "low": 25
+  },
+  "images_with_high": 0,
+  "images_with_any": 20,
+  "anatomy_filtered_out": "tooth_ov<0.20 dropped"
+}

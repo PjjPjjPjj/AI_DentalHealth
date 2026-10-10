@@ -1,0 +1,58 @@
+{
+  "n_images": 3365,
+  "n_groups": 2476,
+  "near_pairs_merged": 3114,
+  "group_size_hist": {
+    "1": 2144,
+    "2": 144,
+    "3": 87,
+    "4": 35,
+    "5": 20,
+    "6": 18,
+    "7": 4,
+    "8": 5,
+    "9": 4,
+    "10": 2,
+    "11": 2,
+    "12": 4,
+    "15": 3,
+    "18": 1,
+    "20": 1,
+    "23": 1,
+    "24": 1
+  },
+  "split_counts": {
+    "train": 1957,
+    "val": 708,
+    "test": 700
+  },
+  "split_pos_rate": {
+    "test": 0.2114,
+    "train": 0.2141,
+    "val": 0.2048
+  },
+  "split_domain": {
+    "caries_0": {
+      "test": 308,
+      "train": 924,
+      "val": 308
+    },
+    "gingivitis": {
+      "test": 246,
+      "train": 702,
+      "val": 264
+    },
+    "other": {
+      "test": 146,
+      "train": 331,
+      "val": 136
+    }
+  },
+  "n_cls0_instances": 1464,
+  "n_cls1_instances": 10843,
+  "conv_check_n": 120,
+  "conv_iou_min": 1.0,
+  "conv_iou_mean": 1.0,
+  "cross_split_md5_groups": [],
+  "images_without_full_mask": 0
+}

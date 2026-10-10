@@ -1,0 +1,53 @@
+# Calculus segmentation baseline - YOLO11s-seg on Oral-Mamba (first round)
+# 保守增强：牙结石分割高度依赖颜色与局部纹理，辉度/饱和度变化取保守值，
+# 保持轻度 rotation/translation/scale，无 flip (牙位不对称)，无 mixup/copy_paste。
+model: yolo11s-seg.pt
+
+data:
+  yaml_path: configs/calculus_data.yaml
+
+task: segment
+
+name: train
+project: outputs/calculus_yolo11s
+
+# --- 初始训练参数 (见任务说明 §10) ---
+train:
+  imgsz: 640
+  epochs: 100
+  patience: 20
+  batch: 48              # V100-32GB；auto 字符串在当前 ultralytics 8.4 不接受
+  device: 0
+  workers: 8
+  amp: true              # FP16，禁止 BF16
+  seed: 42
+  cache: false
+  pretrained: true
+  optimizer: auto
+  lr0: 0.01
+  plots: true
+  deterministic: true
+  verbose: true
+
+  augment:
+    # 轻度几何增强
+    degrees: 5.0
+    translate: 0.05
+    scale: 0.2
+    shear: 2.0
+    fliplr: 0.0           # 牙位不对称，不加翻转
+    flipud: 0.0
+    # 保守颜色增强（牙结石依赖颜色纹理）
+    hsv_h: 0.01
+    hsv_s: 0.25
+    hsv_v: 0.25
+    mosaic: 0.5
+    mixup: 0.0
+    copy_paste: 0.0
+    close_mosaic: 10
+    erasing: 0.0
+    blur: 0.0
+
+eval:
+  conf_threshold: 0.25
+  iou_threshold: 0.5

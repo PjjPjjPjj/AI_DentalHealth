@@ -1,0 +1,37 @@
+{
+  "dataset": "oral_mamba",
+  "calculus_pixel_value": 3,
+  "matched": 3365,
+  "positive_images": 712,
+  "negative_images": 2653,
+  "positive_ratio": 0.2116,
+  "negative_ratio": 0.7884,
+  "mean_lesion_area_px": 1367.5294943820224,
+  "median_lesion_area_px": 852.5,
+  "mean_lesion_area_ratio": 0.014326458921823514,
+  "median_lesion_area_ratio": 0.009892028706907599,
+  "min_lesion_area": 45,
+  "max_lesion_area": 23373,
+  "tiny_lesions_lt_30px": 0,
+  "mean_n_components": 0.4401188707280832,
+  "max_n_components": 10,
+  "anomaly_values": [],
+  "anomaly_count": 0,
+  "shape_mismatch": [],
+  "shape_mismatch_count": 0,
+  "unreadable": [],
+  "empty_label_after_polygon": [],
+  "empty_label_count": 0,
+  "split_counts": {
+    "train": 2018,
+    "val": 672,
+    "test": 675
+  },
+  "conversion_check": {
+    "n": 100,
+    "mean_iou": 0.9999,
+    "median_iou": 1.0,
+    "min_iou": 0.996,
+    "below_0.95_count": 0
+  }
+}

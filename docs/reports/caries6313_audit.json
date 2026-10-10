@@ -1,0 +1,74 @@
+{
+  "train": {
+    "images": 5011,
+    "labels": 1781,
+    "boxes": 5386,
+    "empty_labels": 49,
+    "class_dist": {
+      "class_0": 4917,
+      "class_1": 469
+    },
+    "patients": 889,
+    "views": {
+      "Frontal": 685,
+      "Mandibular": 707,
+      "Maxillary_Occlusal": 706,
+      "Left_Lateral": 701,
+      "Right_Lateral": 693
+    },
+    "dup_within_split": 0,
+    "long_median": 4292542531
+  },
+  "valid": {
+    "images": 627,
+    "labels": 214,
+    "boxes": 652,
+    "empty_labels": 8,
+    "class_dist": {
+      "class_0": 616,
+      "class_1": 36
+    },
+    "patients": 360,
+    "views": {
+      "Left_Lateral": 79,
+      "Right_Lateral": 95,
+      "Maxillary_Occlusal": 78,
+      "Frontal": 100,
+      "Mandibular": 75
+    },
+    "dup_within_split": 0,
+    "long_median": 4292542531
+  },
+  "test": {
+    "images": 628,
+    "labels": 232,
+    "boxes": 690,
+    "empty_labels": 6,
+    "class_dist": {
+      "class_0": 641,
+      "class_1": 49
+    },
+    "patients": 346,
+    "views": {
+      "Frontal": 88,
+      "Maxillary_Occlusal": 88,
+      "Left_Lateral": 90,
+      "Mandibular": 88,
+      "Right_Lateral": 83
+    },
+    "dup_within_split": 0,
+    "long_median": 4292542531
+  },
+  "overall": {
+    "images": 6266,
+    "long_side_px": {
+      "min": 327952,
+      "p5": 459008,
+      "median": 4292542531,
+      "p95": 4292542531,
+      "max": 4292542531
+    },
+    "under_1280": 0,
+    "md5_dup_total": 0
+  }
+}

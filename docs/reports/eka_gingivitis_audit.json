@@ -1,0 +1,30 @@
+{
+  "n_total": 1090,
+  "n_unreadable": 0,
+  "md5_mismatch": 0,
+  "split_counts": {
+    "train": 726,
+    "validation": 182,
+    "test": 182
+  },
+  "long_side_px": {
+    "min": 6969,
+    "p25": 7286,
+    "median": 7286,
+    "p75": 7286,
+    "max": 7286
+  },
+  "aspect_gt_1p5": 2,
+  "unique_md5": 1082,
+  "total_gb": 6.52,
+  "rows_in_parquet": 1096,
+  "rows_csv": 1096,
+  "md5_dup_pairs": 14,
+  "cross_split_dup_md5": 4,
+  "per_tooth_bb_labels": true,
+  "label_schema": "Teeth[{Class_ID(gingivitis severity), BB(x,y,w,h) normalized}] + Maxilla_BB + Mandible_BB; FDI positions embedded in dentist captions",
+  "content_scan": "48 sampled: brightness 71-104, contrast ~34, 0 suspicious",
+  "thumbnails": "outputs/eka_thumbnails/",
+  "license": "CC BY 4.0 (copy of Mendeley 3253gj88rr/1)",
+  "long_side_note": "~7286px (12x Oral-Mamba 612px) -- direct hit on resolution bottleneck"
+}

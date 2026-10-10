@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-26T14:12:40",
+  "python_version": "3.10.18",
+  "platform": "Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17",
+  "torch_version": "2.5.1+cu121",
+  "torch_version_cuda": "12.1",
+  "cuda_available": true,
+  "cudnn_version": "90100",
+  "device_count": 1,
+  "gpu_names": [
+    "Tesla V100-PCIE-32GB"
+  ],
+  "gpu_vram_mb": [
+    32501
+  ],
+  "nvidia_smi": "Wed Aug 26 14:12:40 2026       \n+---------------------------------------------------------------------------------------+\n| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |\n|-----------------------------------------+----------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n|                                         |                      |               MIG M. |\n|=========================================+======================+======================|\n|   0  Tesla V100-PCIE-32GB           Off | 00000000:13:00.0 Off |                    0 |\n| N/A   80C    P0              95W / 250W |   6606MiB / 32768MiB |     96%      Default |\n|                                         |                      |                  N/A |\n+-----------------------------------------+----------------------+----------------------+\n                                                                                         \n+---------------------------------------------------------------------------------------+\n| Processes:                                                                            |\n|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n|        ID   ID                                                             Usage      |\n|=======================================================================================|\n|    0   N/A  N/A     22800      C   ...iniconda3/envs/LLM_py310/bin/python     6602MiB |\n+---------------------------------------------------------------------------------------+"
+}

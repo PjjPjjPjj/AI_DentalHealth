@@ -1,0 +1,14 @@
+{
+  "unique_md5": 1082,
+  "groups": 1082,
+  "near_pairs_merged": 0,
+  "work_long_side": 1536,
+  "work_size_median": [
+    1025,
+    1536
+  ],
+  "n_teeth_bb_total": 12981,
+  "n_teeth_bb_median": 12.0,
+  "fdi_parse_success": 1082,
+  "unreadable_work": 0
+}

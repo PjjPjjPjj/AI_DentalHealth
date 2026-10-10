@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: OralAI-DentalHealth
+message: >-
+  If you use this software or its model weights in your research, please cite
+  this work. Replace the author and repository identifiers before publishing.
+type: software
+authors:
+  - family-names: Peng
+    given-names: Junjie
+    affiliation: XMU
+repository-code: https://github.com/PjjPjjPjj/AI_DentalHealth
+abstract: >-
+  Tooth-level oral lesion screening from RGB intraoral photographs. Detects
+  dental calculus, caries and dental plaque via a four-stage pipeline
+  (tooth instance segmentation, lesion detection, per-tooth classification,
+  lesion-tooth association) producing a unified JSON output.
+keywords:
+  - dental-ai
+  - computer-vision
+  - oral-health
+  - object-detection
+  - instance-segmentation
+  - clinical-screening
+license: AGPL-3.0-or-later
+version: 1.0.0
+date-released: "2026-09-29"

@@ -1,0 +1,94 @@
+{
+  "splits": {
+    "train": {
+      "images": 484,
+      "labels": 484,
+      "empty_labels": 0,
+      "class_instances": {
+        "Calculus": 2276,
+        "Caries": 36,
+        "Gingivitis": 334
+      },
+      "calculus_images": 484,
+      "inst_per_img_median": 5.0
+    },
+    "valid": {
+      "images": 103,
+      "labels": 103,
+      "empty_labels": 0,
+      "class_instances": {
+        "Calculus": 434,
+        "Caries": 8,
+        "Gingivitis": 67
+      },
+      "calculus_images": 103,
+      "inst_per_img_median": 4.0
+    },
+    "test": {
+      "images": 60,
+      "labels": 60,
+      "empty_labels": 0,
+      "class_instances": {
+        "Calculus": 226,
+        "Caries": 15,
+        "Gingivitis": 17,
+        "Ulcer": 2
+      },
+      "calculus_images": 60,
+      "inst_per_img_median": 3.0
+    }
+  },
+  "long_side_px": {
+    "min": 113,
+    "p5": 241,
+    "median": 479,
+    "p95": 3000,
+    "max": 3643
+  },
+  "under_1280": 400,
+  "internal_md5_dups": 44,
+  "internal_near_dup_pairs": 10,
+  "internal_near_dup_examples": [
+    [
+      "(181)_jpg.rf.H9HIkZdXB6Hy9oEJSwdN.jpg",
+      "(2253)_jpg.rf.wB4L3QkCDAehl3Djz8cS.jpg"
+    ],
+    [
+      "IMG_3143_JPEG.rf.fY4feyE15h9y3t6I4H8X.JPEG",
+      "(869)_jpg.rf.0yFqO4pE0EVgb3FKTxXQ.jpg"
+    ],
+    [
+      "IMG_3143_JPG.rf.fHu33od0Vz8tcmbYtMYa.JPG",
+      "(866)_jpg.rf.M7cVxELqk1A528GKjdk2.jpg"
+    ],
+    [
+      "IMG_3145_JPEG.rf.WayifvuByAGcsFNxH5NH.JPEG",
+      "(886)_jpg.rf.vzfoL4TtLRCbHril0XIu.jpg"
+    ],
+    [
+      "IMG_3145_JPG.rf.jbbbQdpatl8PF2IVmDgq.JPG",
+      "(879)_jpg.rf.nsjTxmoVFkRs0sUsf4Wo.jpg"
+    ],
+    [
+      "IMG_3146_JPEG.rf.HS91jVVFAb14aBqQCGyG.JPEG",
+      "(910)_jpg.rf.uj3OF9JDzOdJDzRiJbJ9.jpg"
+    ],
+    [
+      "IMG_3146_JPG.rf.scmvM1PPJX0VkybV2vKA.JPG",
+      "(891)_jpg.rf.CWVNeNfaoDdXXVXDN2Fh.jpg"
+    ],
+    [
+      "IMG_3769_JPEG.rf.OPj856rz342tKlzczKz5.JPEG",
+      "00815_jpg.rf.lP3DkVaiGuoviYMxMJ4h.jpg"
+    ],
+    [
+      "IMG_3769_JPG.rf.4vZEQwVPFbr08SgYvmSf.JPG",
+      "(966)_jpg.rf.3HbSnj4IFwo0g0Hp7GV5.jpg"
+    ],
+    [
+      "(2253)_jpg.rf.wB4L3QkCDAehl3Djz8cS.jpg",
+      "IMG_6821_JPG.rf.RYZzdNUKOeggltAUT9SK.JPG"
+    ]
+  ],
+  "cross_dataset_dups_vs_oral_mamba": []
+}

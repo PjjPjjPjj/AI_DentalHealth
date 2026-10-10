@@ -1,0 +1,156 @@
+{
+  "folders": {
+    "Calculus": {
+      "n_images": 1296,
+      "undecodable": 0,
+      "w_median": 612,
+      "h_median": 408,
+      "w_min": 601,
+      "w_max": 612
+    },
+    "Data caries": {
+      "n_images": 2601,
+      "undecodable": 0,
+      "w_median": 307,
+      "h_median": 201,
+      "w_min": 121,
+      "w_max": 685
+    },
+    "Gingivitis": {
+      "n_images": 2349,
+      "undecodable": 0,
+      "w_median": 612,
+      "h_median": 408,
+      "w_min": 191,
+      "w_max": 644
+    },
+    "Mouth Ulcer": {
+      "n_images": 2806,
+      "undecodable": 0,
+      "w_median": 275,
+      "h_median": 192,
+      "w_min": 150,
+      "w_max": 612
+    },
+    "Tooth Discoloration": {
+      "n_images": 2017,
+      "undecodable": 0,
+      "w_median": 276,
+      "h_median": 183,
+      "w_min": 176,
+      "w_max": 612
+    },
+    "hypodontia": {
+      "n_images": 1251,
+      "undecodable": 0,
+      "w_median": 295,
+      "h_median": 156,
+      "w_min": 135,
+      "w_max": 612
+    }
+  },
+  "yolo": {
+    "splits": {
+      "train": 1466,
+      "val": 44
+    },
+    "class_counts": {
+      "Caries": 2086,
+      "Ulcer": 369,
+      "Tooth Discoloration": 333,
+      "Gingivitis": 759
+    },
+    "boxes_per_img_mean": 2.35,
+    "images_without_labels": 6,
+    "labels_without_images": 2,
+    "caries_images": 843
+  },
+  "leakage": {
+    "checked_new": 13862,
+    "checked_ours": 4929,
+    "md5_overlap": 4708,
+    "dhash_overlap": 31,
+    "md5_examples": [
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(1).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/val/gingivitis_(96).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(10).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/val/gingivitis_(174).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(100).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/test/gingivitis_(12).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(1000).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/gingivitis_(1646).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(1001).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/(923).jpg"
+      }
+    ],
+    "dhash_examples": [
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(1217).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/gingivitis_(122).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(1259).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/gingivitis_(107).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(166).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/(22).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(216).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/test/gingivitis_(12).jpg"
+      },
+      {
+        "new": "datasets/raw/archive/extracted/Calculus/Calculus/(226).jpg",
+        "ours": "datasets/processed/calculus_seg_v3/images/train/98.jpg"
+      }
+    ]
+  },
+  "within_dups_groups": 2046,
+  "within_dups_examples": [
+    [
+      "datasets/raw/archive/extracted/Calculus/Calculus/(1).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(94).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(96).jpg"
+    ],
+    [
+      "datasets/raw/archive/extracted/Calculus/Calculus/(10).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(93).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(132).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(174).jpg"
+    ],
+    [
+      "datasets/raw/archive/extracted/Calculus/Calculus/(100).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(72).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(12).jpg"
+    ],
+    [
+      "datasets/raw/archive/extracted/Calculus/Calculus/(1000).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(935).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(949).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(952).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1646).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1741).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1802).jpg"
+    ],
+    [
+      "datasets/raw/archive/extracted/Calculus/Calculus/(1001).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(922).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(923).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(956).jpg",
+      "datasets/raw/archive/extracted/Calculus/Calculus/(982).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1641).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1717).jpg",
+      "datasets/raw/archive/extracted/Gingivitis/Gingivitis/(1797).jpg"
+    ]
+  ]
+}

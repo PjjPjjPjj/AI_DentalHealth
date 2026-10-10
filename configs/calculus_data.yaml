@@ -1,0 +1,14 @@
+# Calculus segmentation dataset.
+#
+# `path` is resolved relative to the CURRENT WORKING DIRECTORY by Ultralytics,
+# so training must be launched from the repository root:
+#     python -m src.train.train_calculus
+#
+# Build this dataset first:
+#     python scripts/build_calculus_dataset.py
+path: datasets/processed/calculus_seg
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: calculus

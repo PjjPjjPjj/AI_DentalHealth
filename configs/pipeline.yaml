@@ -1,0 +1,67 @@
+# Unified inference pipeline configuration.
+# All quality-check thresholds live here - nothing hardcoded in src/.
+
+quality:
+  blur_laplacian_threshold: 100.0   # Laplacian variance below => blurry
+  brightness_underexposed: 60.0     # mean gray below => underexposed
+  brightness_overexposed: 200.0     # mean gray above => overexposed
+  dark_pixel_ratio_limit: 0.35
+  bright_pixel_ratio_limit: 0.35
+  highlight_ratio_limit: 0.12       # pixels > 245 grayscale ratio
+  min_size: 320                     # smaller edge => too small to analyze
+
+pipeline:
+  task_order:
+    - quality
+    - tooth
+    - calculus
+    - caries
+    - plaque
+  association:
+    calculus_min_overlap: 0.20      # lesion->tooth overlap_ratio to assign
+    caries_center_rule: true
+    caries_min_iou: 0.01            # below this the lesion stays unassigned
+    unassigned_tag: unassigned
+
+inference:
+  tooth:
+    imgsz: 896
+    conf: 0.30
+    iou: 0.70
+    max_det: 60
+  calculus:
+    c1: 0.005
+    thr_std: 0.60
+    thr_large: 0.45
+    large_edge: 0.01565
+    tau: 0.40
+    thr_rescue: 0.25
+    s1_conf_min: 0.02
+    fb: true                 # v5-fix7 stage1-mask fallback (large-lesion recall)
+    fb_min_px: 30
+    close_k: 5
+  caries:
+    imgsz: 960
+    conf: 0.55        # frozen from val F1 sweep (eval_c2, test F1 0.887)
+    iou: 0.60
+    max_det: 100
+  plaque:
+    imgsz: 224
+    conf_threshold: 0.746  # calibrated scale (Platt); == raw 0.70 operating point, testExt sens 0.937/spec 0.560
+    calibration: outputs/plaque_bin_v2_sano/calibration_platt.npz  # fitted on Mendeley ext val + 503 SANO val negs; ECE 0.040->0.012
+    windows:               # full crop only - multiwindow tested worse (verify3)
+      - [0.0, 0.0, 1.0, 1.0]
+    image_level:           # image-level screening aggregation (plaque_image_level eval)
+      aggregation: mean    # mean-P: SANO Spec 1.0 (0/46 FP), test Sens 0.966
+      threshold_mean: 0.5231   # val positive P5 (calibrated scale, Sens>=0.95 rule)
+      threshold_max: 0.9517    # max-P: SANO Spec 0.978, test Sens 0.980
+      threshold_top3: 0.895
+
+weights:
+  tooth: outputs/iop_toothseg/weights/best.pt
+  calculus:
+    s1: outputs/calculus_v5_stage1/weights/best.pt
+    s2: outputs/calculus_v3b_stage2/weights/best.pt
+    artifacts: outputs/calculus_v5_fix7/artifacts   # FB-refit fusion_v3.npz + verifier/ imgclf/ (fix7-FB; rollback -> outputs/calculus_v5_fix4)
+  caries: outputs/caries_c2/weights/best.pt
+  plaque: outputs/plaque_bin_v2_sano/weights/best.pt

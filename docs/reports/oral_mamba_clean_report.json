@@ -1,0 +1,17 @@
+{
+ "raw_images": 3375,
+ "unique_content_groups": 2702,
+ "kept": 2702,
+ "dropped_duplicates": 673,
+ "excluded_unlabeled": 0,
+ "mask_rule_max_calculus_groups": 686,
+ "mask_rule_max_foreground_groups": 2016,
+ "groups_with_calculus": 686,
+ "verify": {
+  "duplicate_left": 0,
+  "missing_mask": 0,
+  "dim_mismatch": 0,
+  "images_without_calculus_pixels": 2016,
+  "missing_mask_files": []
+ }
+}

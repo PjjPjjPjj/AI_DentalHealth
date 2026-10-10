@@ -1,0 +1,674 @@
+{
+  "image_count": 3375,
+  "label_count": 3365,
+  "matched_count": 3365,
+  "missing_images": {},
+  "missing_labels": {
+    "150(1)": "datasets/raw/oral_mamba/images/150(1).jpg",
+    "152(1)": "datasets/raw/oral_mamba/images/152(1).jpg",
+    "154(1)": "datasets/raw/oral_mamba/images/154(1).jpg",
+    "149(1)": "datasets/raw/oral_mamba/images/149(1).jpg",
+    "153(1)": "datasets/raw/oral_mamba/images/153(1).jpg",
+    "151(1)": "datasets/raw/oral_mamba/images/151(1).jpg",
+    "146(1)": "datasets/raw/oral_mamba/images/146(1).jpg",
+    "148(1)": "datasets/raw/oral_mamba/images/148(1).jpg",
+    "147(1)": "datasets/raw/oral_mamba/images/147(1).jpg",
+    "155(1)": "datasets/raw/oral_mamba/images/155(1).jpg"
+  },
+  "mask_shape_mismatch_with_image": [],
+  "unique_value_patterns": {
+    "(0, 1)": 1220,
+    "(0, 4)": 717,
+    "(0, 3)": 295,
+    "(0, 2)": 207,
+    "(0, 1, 2)": 197,
+    "(0, 3, 4)": 188,
+    "(0, 1, 4)": 158,
+    "(0, 2, 4)": 77,
+    "(0, 1, 3)": 64,
+    "(0, 1, 2, 4)": 59,
+    "(0, 1, 3, 4)": 59,
+    "(0, 2, 3)": 38,
+    "(0, 1, 2, 3)": 35,
+    "(0,)": 18,
+    "(0, 1, 2, 3, 4)": 17,
+    "(0, 2, 3, 4)": 16
+  },
+  "pixel_frequency": {
+    "0": 567350429,
+    "1": 25800921,
+    "2": 7367634,
+    "4": 2522552,
+    "3": 973681
+  },
+  "mask_count_containing_value": {
+    "1": 1809,
+    "2": 646,
+    "3": 712,
+    "4": 1291
+  },
+  "sample_structure": {
+    "lables": [
+      {
+        "image_id": "(1063)",
+        "shape": [
+          390,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "image_id": "(1254)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "(1274)",
+        "shape": [
+          372,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "image_id": "(143)",
+        "shape": [
+          405,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2
+        ]
+      },
+      {
+        "image_id": "(151)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "(873)",
+        "shape": [
+          195,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2
+        ]
+      },
+      {
+        "image_id": "(921)",
+        "shape": [
+          355,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "image_id": "(927)",
+        "shape": [
+          405,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "111",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3
+        ]
+      },
+      {
+        "image_id": "112",
+        "shape": [
+          612,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "147",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "60",
+        "shape": [
+          183,
+          275
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_1111",
+        "shape": [
+          160,
+          315
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_1184",
+        "shape": [
+          165,
+          305
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_2009",
+        "shape": [
+          103,
+          266
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_2310",
+        "shape": [
+          159,
+          317
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_2370",
+        "shape": [
+          195,
+          258
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_240",
+        "shape": [
+          295,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_2445",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_2598",
+        "shape": [
+          225,
+          225
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_2829",
+        "shape": [
+          199,
+          253
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_3522",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_3579",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2
+        ]
+      },
+      {
+        "image_id": "caries_0_3581",
+        "shape": [
+          183,
+          275
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_4639",
+        "shape": [
+          108,
+          177
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_4722",
+        "shape": [
+          198,
+          306
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_6794",
+        "shape": [
+          185,
+          273
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_6883",
+        "shape": [
+          183,
+          275
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "image_id": "caries_0_6903",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_7750",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "image_id": "caries_0_9468",
+        "shape": [
+          168,
+          299
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1100)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1100)(1)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1150)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1268)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1272)",
+        "shape": [
+          433,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1320)",
+        "shape": [
+          245,
+          379
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1581)",
+        "shape": [
+          193,
+          293
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1645)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(1847)",
+        "shape": [
+          283,
+          585
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(2010)",
+        "shape": [
+          397,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(2038)",
+        "shape": [
+          322,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(212)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(2296)",
+        "shape": [
+          397,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(2323)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(2330)",
+        "shape": [
+          391,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(329)",
+        "shape": [
+          232,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(360)",
+        "shape": [
+          408,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(690)",
+        "shape": [
+          376,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "image_id": "gingivitis_(709)",
+        "shape": [
+          528,
+          612
+        ],
+        "dtype": "uint8",
+        "unique_values": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}

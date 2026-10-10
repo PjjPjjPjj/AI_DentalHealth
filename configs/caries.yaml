@@ -1,0 +1,46 @@
+# Caries detection baseline - YOLO11s (6313 Intraoral Caries Dataset)
+task: caries
+model: yolo11s.pt
+task_type: detect
+
+data:
+  # populated after convert_caries6313.py; YOLO data yaml path or inline
+  yaml_path: configs/caries_data.yaml
+
+train:
+  imgsz: 640
+  epochs: 100
+  patience: 20
+  amp: true
+  seed: 42
+  batch: auto          # V100 -> auto picks largest power-of-two batch
+  workers: 4
+  device: 0            # 0 for single GPU; cpu if no GPU
+  pretrained: true
+  cache: false
+  optimizer: auto
+  lr0: 0.01
+  augment:
+    # conservative medically-oriented augmentation (see plan section 16)
+    hsv_h: 0.0
+    hsv_s: 0.0
+    hsv_v: 0.0
+    degrees: 5.0
+    translate: 0.05
+    scale: 0.2
+    shear: 2.0
+    fliplr: false       # clinically conservative
+    mosaic: 0.5
+    mixup: 0.0
+    close_mosaic: 10
+    erasing: 0.0
+    blur: 0.0
+
+eval:
+  conf_threshold: 0.25
+  iou_threshold: 0.7
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.5
+  max_det: 100

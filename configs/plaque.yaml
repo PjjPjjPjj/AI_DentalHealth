@@ -1,0 +1,26 @@
+# Plaque region classification baseline - YOLO11s-cls (AIRC-LABDEN crops)
+task: plaque
+model: yolo11s-cls.pt
+task_type: classify
+
+data:
+  root: datasets/processed/plaque_cls
+
+train:
+  imgsz: 224          # V1: test 224 first (plan section 14)
+  epochs: 100
+  patience: 20
+  amp: true
+  seed: 42
+  batch: auto
+  workers: 4
+  device: 0
+  pretrained: true
+  optimizer: auto
+  lr0: 0.001
+
+eval:
+  threshold: 0.5
+
+inference:
+  threshold: 0.5

@@ -1,0 +1,8 @@
+# Data audit configuration. Adjust per raw dataset as needed.
+audit:
+  image_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"]
+  min_width: 100
+  min_height: 100
+  duplicate_pixel_threshold: 0.0     # 0 => exact file hash only
+  phash_distance_threshold: 6        # hamming distance <= => near-duplicate warning
+  max_mask_out_of_bounds_ratio: 0.01 # tolerance for mask overflow

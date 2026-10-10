@@ -1,0 +1,168 @@
+{
+  "parts": {
+    "part1": {
+      "csv_cols": [
+        "patient",
+        "Image-Filename",
+        "status"
+      ],
+      "images_found": 5276
+    },
+    "part2": {
+      "csv_cols": [
+        "patient",
+        "Image-Filename",
+        "Recommend"
+      ],
+      "images_found": 5174
+    }
+  },
+  "splits": {
+    "csv_rows": 10450,
+    "missing_in_csv": [],
+    "missing_in_dir": [],
+    "missing_in_dir_n": 0,
+    "base_images": 1319,
+    "augmented_images": 9131,
+    "split_counts_all": {
+      "train": 7538,
+      "test": 1646,
+      "validation": 1266
+    },
+    "split_counts_base": {
+      "test": 207,
+      "train": 950,
+      "validation": 162
+    }
+  },
+  "leakage": {
+    "patients_with_multiple_splits": {},
+    "patient_split_counts": {
+      "train": 107,
+      "test": 23,
+      "validation": 18
+    }
+  },
+  "labels": {
+    "no_label_images": 0,
+    "no_label_examples": [],
+    "undecodable": [],
+    "total_boxes": 133824,
+    "boxes_per_split": {
+      "train": 96360,
+      "test": 21120,
+      "validation": 16344
+    },
+    "plaque_ratio_per_split": {
+      "train": 0.9771,
+      "validation": 0.9941,
+      "test": 0.9801
+    },
+    "boxes_per_image_mean": 12.81,
+    "tooth_id_top10": [
+      [
+        1,
+        19920
+      ],
+      [
+        6,
+        19848
+      ],
+      [
+        16,
+        14616
+      ],
+      [
+        11,
+        13872
+      ],
+      [
+        3,
+        9000
+      ],
+      [
+        8,
+        8112
+      ],
+      [
+        18,
+        6720
+      ],
+      [
+        13,
+        5952
+      ],
+      [
+        19,
+        4896
+      ],
+      [
+        14,
+        4560
+      ]
+    ],
+    "n_tooth_ids_used": 20,
+    "images_with_labels": 10450,
+    "images_decoded": 10450,
+    "bbox_out_of_range": 76,
+    "tooth_group_label_conflicts": 2016,
+    "tooth_instances_total": 33456
+  },
+  "integrity": {
+    "n_dims": 10450,
+    "w_min": 2560,
+    "w_max": 6240,
+    "h_min": 1920,
+    "h_max": 4160,
+    "w_median": 6240.0,
+    "h_median": 4160.0
+  },
+  "duplicates": {
+    "md5_cross_split_groups": 0,
+    "md5_cross_split_examples": [],
+    "md5_unique_hashes": 1319,
+    "dhash_cross_split_groups": 4,
+    "dhash_cross_split_examples": [
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "files": [
+          "part1/patient0071/patient0071_central-left.jpg",
+          "part2/patient0109/patient0109_central-left.jpg"
+        ]
+      },
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "files": [
+          "part1/patient0071/patient0071_central-right.jpg",
+          "part2/patient0109/patient0109_central-right.jpg"
+        ]
+      },
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "files": [
+          "part1/patient0071/patient0071_top-left.jpg",
+          "part2/patient0109/patient0109_bottom-left.jpg"
+        ]
+      },
+      {
+        "splits": [
+          "train",
+          "validation"
+        ],
+        "files": [
+          "part1/patient0071/patient0071_top-middle.jpg",
+          "part2/patient0109/patient0109_top-middle.jpg"
+        ]
+      }
+    ]
+  }
+}
